@@ -10,10 +10,10 @@ function NavTabs() {
 
   return (
 
-    <Navbar bg="light" data-bs-theme="light">
+    <Navbar bg="info" data-bs-theme="light"  sticky="top">
       <Container>
         <Navbar.Brand href="/aboutme">Lalita Kapadia</Navbar.Brand>
-        <Nav className="me-auto">
+        <Nav className="mr-auto mt-2" >
           <Nav.Link href="/aboutme">About Me</Nav.Link>
           <Nav.Link href="/portfolio">Portfolio</Nav.Link>
           <Nav.Link href="/contact">Contact</Nav.Link>
