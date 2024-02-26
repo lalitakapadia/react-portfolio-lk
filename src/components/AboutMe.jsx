@@ -14,7 +14,7 @@ export default function AboutMe() {
                     style={{ width: '195px', height: '195px', borderRadius: '50%' }} ></img> */}
                 </Col>
                 <Col sm={8}>
-                    <h3 style = {{ textAlign: 'left', fontSize: '1.5em'}}>About Me</h3>
+                    <h3 style = {{ textAlign: 'left', fontSize: '1.5em'}}>Lalita Kapadia</h3>
                     <p style={{ textAlign: 'justify', fontSize: '1.3em', maxWidth: '90%', width: '100%'}}>
                      paragraph about me 
                     </p>

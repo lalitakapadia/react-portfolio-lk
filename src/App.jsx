@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import Nav from './components/NavTabs';
+import NavTabs from './components/NavTabs';
 // import Footer from './components/Footer';
 
 // import { useState } from 'react'
@@ -10,7 +10,7 @@ import Nav from './components/NavTabs';
 function App() {
   return (
     <>
-      <Nav />
+      <NavTabs />
       <main style={{ 
         background: 'linear-gradient(to bottom, #273469, #1E2749)',
         color: 'white',
