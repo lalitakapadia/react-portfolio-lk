@@ -1,10 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-// import App from './App.jsx'
 import App from './App';
+import Error from './components/Error';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact'
-// import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import AboutMe from './components/AboutMe'
 // Bringing in the required imports from 'react-router-dom' to set up application routing behavior
@@ -14,6 +13,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement: <Error />,
     children: [
       {
       index: true,

@@ -1,10 +1,5 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
-import { Row } from 'react-bootstrap';
-import Container from 'react-bootstrap/Container';
-import Col from 'react-bootstrap/Col';
+import Project from './Project'
 
 function Portfolio(){
 
@@ -13,7 +8,7 @@ function Portfolio(){
         {
             title: 'JbTravelBlog', 
             imageSrc: './src/assets/images/travelBlog.png',
-            description: 'sequelize, dorenv, express, handlebars,mysql2, NodeJS',
+            description: 'NodeJS, Express, MySQL, Sequelize, Tailwind',
             deployedLink: 'https://jbtravelblogfinal-84a20cc94acf.herokuapp.com',
             githubLink: 'https://github.com/MustafeMohamoud1/JBTravelBlog'
          },
@@ -25,6 +20,30 @@ function Portfolio(){
              githubLink: 'https://github.com/lalitakapadia/recipe-translator.git'
  
          },
+         {
+          title: 'weather Dashboard',
+          imageSrc: './src/assets/images/weatherDashboard.png',
+          description: 'Open Weather API, jQuery, HTML, Javascript',
+          deployedLink: 'https://lalitakapadia.github.io/weather-dashboard/',
+          githubLink: 'https://github.com/lalitakapadia/weather-dashboard.git'
+         },
+         {
+          title: 'Work day Scheduler',
+          imageSrc: './src/assets/images/workdayScheduler.png',
+          description: 'HTML, CSS, JavaScript, jQuery, BootStrap',
+          deployedLink: 'https://lalitakapadia.github.io/workday-scheduler/r',
+          githubLink: 'https://github.com/lalitakapadia/workday-scheduler.git'
+        },
+         {
+           title: 'Note Taker',
+           imageSrc: './src/assets/images/noteTaker.png',
+           description: 'Express.js, backend application',
+           deployedLink: 'https://github.com/lalitakapadia/express-note-taker',
+           githubLink: 'https://github.com/lalitakapadia/express-note-taker.git'
+         },
+         
+        
+
         {
           title: 'PWA Text Editor',
           imageSrc: './src/assets/images/pwa.png',
@@ -49,32 +68,28 @@ function Portfolio(){
     ]
 
     return (
-        
-       <Container>
-            <Row>
-                <h3 style={{ fontSize: '1.5em', marginLeft: '20px', textAlign: 'center'}}>Portfolio</h3>
-            </Row>
-            <Row>
-                {applications.map((app, index) => (
-                    <Col sm={5}>
-                        <Card >
-                            
-                            <Card.Img fluid variant="top" src={app.imageSrc} />
-                            <Card.Body>
-                            <Card.Title>{app.title}</Card.Title>
-                            <Card.Text>
-                            {app.description}
-                            </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                ))}
-            </Row>
-       </Container> 
-        
+        <div>
+          <>
+          <div  >
+          <br/>
+      <h3 style={{ fontSize: '1.5em', marginLeft: '10px', textAlign: 'center'}}>Portfolio</h3>
+      <br/>
+          </div>
+          <div class="container">
+            <div class="row">
+              {applications.map((app, index)=> (
+                <div class="col-4 p-3">
+                  <div class="card">
+                    <Project application={app} />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          </>
+        </div>
+       
     )
-
 }
 
 export default Portfolio
