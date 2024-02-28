@@ -1,18 +1,18 @@
 import { Outlet } from 'react-router-dom';
-import NavTabs from './components/NavTabs';
-// import Footer from './components/Footer';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <>
-      <NavTabs />
+      <Header />
       <main style={{ 
-        color: 'Lavender',
+        background: '#B9B7BD',
         minHeight: '100vh', 
       }}>
         <Outlet />
       </main>
-      {/* <Footer /> */}
+      {<Footer />}
     </>
   );
 }

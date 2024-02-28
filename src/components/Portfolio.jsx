@@ -1,10 +1,5 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
-import { Row } from 'react-bootstrap';
-import Container from 'react-bootstrap/Container';
-import Col from 'react-bootstrap/Col';
+import Project from './Project'
 
 function Portfolio(){
 
@@ -74,34 +69,26 @@ function Portfolio(){
 
     return (
         <div>
-          <div>
-            Portfolio
+          <>
+          <div  >
+          <br/>
+      <h3 style={{ fontSize: '1.5em', marginLeft: '10px', textAlign: 'center'}}>Portfolio</h3>
+      <br/>
           </div>
           <div class="container">
             <div class="row">
               {applications.map((app, index)=> (
                 <div class="col-4 p-3">
                   <div class="card">
-                    <Card >
-                        <Card.Img fluid variant="top" src={app.imageSrc} />
-                        <Card.Body>
-                          <Card.Title>{app.title}</Card.Title>
-                          <Card.Text>
-                          {app.description}
-                          <a href={app.githubLink} target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-github" style={{ color: 'black', fontSize: '2em', margin: '5px' }}></i>
-                          </a>{" "}
-                          </Card.Text>
-                          <Button href={app.deployedLink} target="_blank" variant="primary" >Visit {app.title}</Button>
-                        </Card.Body>
-                    </Card>
+                    <Project application={app} />
                   </div>
                 </div>
               ))}
             </div>
           </div>
+          </>
         </div>
-    
+       
     )
 }
 

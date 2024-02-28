@@ -18,7 +18,7 @@ export default function Contact() {
       };
     return (
         <div class='p-10'>
-            <Form bg="dark" data-bs-theme="dark"  noValidate validated={validated} onSubmit={handleSubmit}>
+            <Form  noValidate validated={validated} onSubmit={handleSubmit}>
                 <Row className="mb-10">
                     <Col xs={4} sm={{ span: 4, offset: 4 }}>
                         <Row className="mb-3">
@@ -54,7 +54,7 @@ export default function Contact() {
                         </Row>
                         <Row className="mb-3">
                                 <Form.Group as={Col} controlId="formGridSubmit">
-                                    <Button type="submit" variant="primary">Submit</Button>{' '}
+                                    <Button type="submit" variant="secondary">Submit</Button>{' '}
                                 </Form.Group>
                         </Row>
                     </Col>
