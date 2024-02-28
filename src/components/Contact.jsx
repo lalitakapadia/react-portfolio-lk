@@ -17,7 +17,11 @@ export default function Contact() {
         setValidated(true);
       };
     return (
+        <>    
         <div class='p-10'>
+            <br/>
+            <h3 style={{ fontSize: '2.4em', marginLeft: '10px', textAlign: 'center'}}>Contact</h3>
+            <br/>
             <Form  noValidate validated={validated} onSubmit={handleSubmit}>
                 <Row className="mb-10">
                     <Col xs={4} sm={{ span: 4, offset: 4 }}>
@@ -61,5 +65,7 @@ export default function Contact() {
                 </Row>
             </Form>
         </div>
+        </>
+        
     )     
 }

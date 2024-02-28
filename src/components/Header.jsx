@@ -10,21 +10,6 @@ function Header() {
 
   return (
     <>
-      {/* <style type="text/css">
-          {`
-          .navbar-lk {
-            background-color: teal;
-            color: white;
-            font-weight: bold;
-          }
-          .navbar-lk-toggle {
-            background-color: teal;
-            color: white;
-            font-weight: bold;
-          }
-        `}
-        </style> */}
-
       <Navbar  bg="secondary" data-bs-theme="light"   sticky="top">
         <Container>
           <Navbar.Brand href="/">Lalita Kapadia</Navbar.Brand>

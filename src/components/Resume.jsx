@@ -2,6 +2,7 @@ import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
+import { Button, Container } from 'react-bootstrap';
 
 const frontEnds = [
     "MERN",
@@ -61,9 +62,19 @@ const tools = [
 export default function Resume() {
     return (
         <>
-            <div class="p-4">
+            <Container fluid>
                 <Row>
-                    <Col>
+                    <Col sm={12} md={6}>
+                        <h3 style={{ fontSize: '2.4em', marginLeft: '10px', }}>Resume</h3>
+                    </Col>
+                    <Col sm={12} md={6} style={{padding:10, textAlign: 'right'}}  >
+                        <Button target="" variant="info" href="https://docs.google.com/document/d/193Scp06iuDSKS6m6RLLJVrWc0wwWEf_8/edit?usp=drive_link&ouid=107972184887030584857&rtpof=true&sd=true">
+                            Download Resume
+                        </Button>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xs={12} md={6} lg={3} style={{padding: 5}}>
                         <ListGroup as="ul">
                             <ListGroup.Item as="li" active>
                             FrontEnds
@@ -74,7 +85,7 @@ export default function Resume() {
                         </ListGroup>
                     </Col>
 
-                    <Col>
+                    <Col xs={12}  md={6} lg={3} style={{padding: 5}}>
                         <ListGroup as="ul">
                             <ListGroup.Item as="li" active>
                             BackEnds
@@ -86,7 +97,7 @@ export default function Resume() {
                     </Col>
 
                     
-                    <Col>
+                    <Col xs={12} md={6} lg={2} style={{padding: 5}}>
                         <ListGroup as="ul">
                             <ListGroup.Item as="li" active>
                             Databases
@@ -98,7 +109,7 @@ export default function Resume() {
                     </Col>
 
                     
-                    <Col>
+                    <Col xs={12} md={6} lg={2} style={{padding: 5}}>
                         <ListGroup as="ul">
                             <ListGroup.Item as="li" active>
                             Deployments
@@ -110,7 +121,7 @@ export default function Resume() {
                     </Col>
 
                     
-                    <Col>
+                    <Col xs={12} md={6} lg={2} style={{padding: 5}}>
                         <ListGroup as="ul">
                             <ListGroup.Item as="li" active>
                             Tools
@@ -121,7 +132,8 @@ export default function Resume() {
                         </ListGroup>
                     </Col>
                 </Row>
-            </div>
+
+            </Container>
         </>
     )
 }
