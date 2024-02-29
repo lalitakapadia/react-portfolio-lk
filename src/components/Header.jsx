@@ -5,26 +5,35 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+
 function Header() {
   const currentPage = useLocation().pathname;
 
   return (
-    <>
-      <Navbar  bg="secondary" data-bs-theme="light"   sticky="top">
-        <Container>
-          <Navbar.Brand href="">Lalita Kapadia</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Nav className="mr-auto mt-2" >
-            <Nav.Item>
-              <Nav.Link href="/">About Me</Nav.Link>
-            </Nav.Item>
-            <Nav.Link href="/portfolio">Portfolio</Nav.Link>
-            <Nav.Link href="/contact">Contact</Nav.Link>
-            <Nav.Link href="/resume">Resume</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
-    </>
+
+<>
+<Navbar style={{background:'#12486B'}}  expand="lg" >
+    <Container>
+      <Navbar.Brand href="/">Lalita Kapadia</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="me-auto">
+          <Nav.Link href="/">About Me</Nav.Link>
+          <NavDropdown title="Portfolio" id="basic-nav-dropdown">
+            <NavDropdown.Item href="/Portfolio">Grid View</NavDropdown.Item>
+            <NavDropdown.Item href="/PortfolioCarousel">Carousel View</NavDropdown.Item>
+          </NavDropdown>
+          <Nav.Link href="/Resume">Resume</Nav.Link>
+          <Nav.Link href="/Contact">Contact</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Container>
+  </Navbar>
+  </>    
   );
 }
 

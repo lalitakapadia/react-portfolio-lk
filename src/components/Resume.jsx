@@ -65,7 +65,7 @@ export default function Resume() {
             <Container fluid>
                 <Row>
                     <Col sm={12} md={6}>
-                        <h3 style={{ fontSize: '2.4em', marginLeft: '10px', }}>Resume</h3>
+                        <h3 style={{ fontSize: '2.4em', marginLeft: '10px', }}>Technology Stack</h3>
                     </Col>
                     <Col sm={12} md={6} style={{padding:10, textAlign: 'right'}}  >
                         <Button target="" variant="info" href="https://docs.google.com/document/d/193Scp06iuDSKS6m6RLLJVrWc0wwWEf_8/edit?usp=drive_link&ouid=107972184887030584857&rtpof=true&sd=true">
