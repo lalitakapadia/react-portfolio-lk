@@ -1,10 +1,9 @@
-import React from 'react';
-import ProjectCard from './ProjectCard'
+import Carousel from 'react-bootstrap/Carousel';
 import { Row, Col, Container } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
 
-function Portfolio(){
+export default function PortfolioCarousel() {
 
-   // link for projects
     const applications = [
         {
             title: 'JbTravelBlog', 
@@ -67,44 +66,38 @@ function Portfolio(){
             githubLink: 'https://github.com/lalitakapadia/object-relational-mapping-homework.git'
         }
     ]
-     // using react bootstrap for the array of dependencies
-    return (
-      <>
-        <Container>
-          <Row>
-            <Col xs={12} style={{textAlign: 'center', padding: 10, fontSize: 32}}>
-              Project Portfolio
-            </Col>
-          </Row>
-          <Row>
-            {applications.map((app)=> (
-                 <Col xs={12} md={6} lg={4} style={{padding: 10}}>
-                  <ProjectCard application={app} />
-                 </Col>
-               ))}
-          </Row>
-        </Container>
-      </>
-      //   <div>
-      //     <>
-      //     <div  > 
-      // <h3 style={{ fontSize: '2.4em', marginLeft: '10px', textAlign: 'center'}}>Portfolio</h3>
-      //     </div>
-      //     <div class="container">
-      //       <div class="row">
-      //         {applications.map((app)=> (
-      //           <div class="col-4 p-3">
-      //             <div class="card">
-      //               <Project application={app} />
-      //             </div>
-      //           </div>
-      //         ))}
-      //       </div>
-      //     </div>
-      //     </>
-      //   </div>
-       
-    )
+    
+  return (
+    <>
+        <div>
+            <Container style={{ height: '80vh'}} bg="secondary" data-bs-theme="dark">
+                <Row>
+                    <Col sm={12} style={{alignText: 'center'}}>
+                        <Carousel>
+                            {applications.map((app)=> (
+                                    <Carousel.Item> 
+                                        <div style={{textAlign: 'center', padding: 5}}>
+                                        <Button  target="" variant="info" href={app.deployedLink}>
+                                            {app.title}
+                                        </Button>
+                                        </div>                                  
+                                        <img className="d-block w-100 opacity-75" src={app.imageSrc} alt={app.title} style={{height: '80vh'}} ></img>              
+                                    <Carousel.Caption>   
+                                    <a fluid href={app.githubLink} target="_blank" rel="noopener noreferrer">
+                                        <i className="fab fa-github" style={{ color: 'black', fontSize: '2em', margin: '5px' }}></i>
+                                    </a>{" "}
+                                    
+                                    <p>{app.description}</p>
+                                    </Carousel.Caption>                         
+                                    </Carousel.Item>
+                                ))}                                
+                        </Carousel>                        
+                    </Col>
+                </Row>
+            </Container>
+        </div>
+        
+    </>
+    
+  );
 }
-
-export default Portfolio

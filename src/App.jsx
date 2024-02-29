@@ -7,7 +7,7 @@ function App() {
     <>
       <Header />
       <main style={{ 
-        background: '#B9B7BD',
+        background: '#419197',
         minHeight: '100vh', 
       }}>
         <Outlet />

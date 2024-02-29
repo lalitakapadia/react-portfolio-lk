@@ -3,7 +3,7 @@ import Col from 'react-bootstrap/Col';
 
 export default function Footer() {
     return (
-        <footer style={{ backgroundColor: '#E7D2CC', textAlign: 'center', padding: '5px' }}>
+        <footer style={{ backgroundColor: '#78D6C6', textAlign: 'center', padding: '5px' }}>
             <Col>
                 <a href="https://github.com/lalitakapadia" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-github" style={{ color: 'black', fontSize: '2em', margin: '5px' }}></i>

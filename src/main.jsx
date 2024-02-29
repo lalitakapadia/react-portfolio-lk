@@ -7,6 +7,7 @@ import Contact from './components/Contact'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import AboutMe from './components/AboutMe'
 import Resume from './components/Resume';
+import PortfolioCarousel from './components/PortfolioCarousel';
 // Bringing in the required imports from 'react-router-dom' to set up application routing behavior
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    errorElement: <Error />,
+    // errorElement: <Error />,
     children: [
       {
       index: true,
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: '/Portfolio',
         element: <Portfolio />,
+      },
+      {
+        path: '/PortfolioCarousel',
+        element: <PortfolioCarousel />,
       },
        {
          path: '/Resume',
