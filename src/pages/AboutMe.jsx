@@ -11,7 +11,7 @@ export default function AboutMe() {
             <Container>
                 <Row>
                     <Col sm={4} >
-                        <Image src="./src/assets/images/lalitakapadia.jpg" roundedCircle fluid />
+                        <Image src="/images/lalitakapadia.jpg" roundedCircle fluid />
                     </Col>
                     <Col sm={8}>
                         <h3 style = {{ textAlign: 'left', fontSize: '1.5em'}}>About Me</h3>

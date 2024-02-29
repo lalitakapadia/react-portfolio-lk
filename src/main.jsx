@@ -1,13 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App';
-import Error from './components/Error';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact'
+import Error from './pages/Error';
+import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import AboutMe from './components/AboutMe'
-import Resume from './components/Resume';
-import PortfolioCarousel from './components/PortfolioCarousel';
+import AboutMe from './pages/AboutMe'
+import Resume from './pages/Resume';
+import PortfolioCarousel from './pages/PortfolioCarousel';
 // Bringing in the required imports from 'react-router-dom' to set up application routing behavior
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -15,7 +15,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    // errorElement: <Error />,
+    errorElement: <Error />,
     children: [
       {
       index: true,
