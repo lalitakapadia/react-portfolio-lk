@@ -10,24 +10,9 @@ function Header() {
 
   return (
     <>
-      {/* <style type="text/css">
-          {`
-          .navbar-lk {
-            background-color: teal;
-            color: white;
-            font-weight: bold;
-          }
-          .navbar-lk-toggle {
-            background-color: teal;
-            color: white;
-            font-weight: bold;
-          }
-        `}
-        </style> */}
-
       <Navbar  bg="secondary" data-bs-theme="light"   sticky="top">
         <Container>
-          <Navbar.Brand href="/">Lalita Kapadia</Navbar.Brand>
+          <Navbar.Brand href="">Lalita Kapadia</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Nav className="mr-auto mt-2" >
             <Nav.Item>

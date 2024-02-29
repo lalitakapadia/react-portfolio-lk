@@ -3,7 +3,7 @@ import Project from './Project'
 
 function Portfolio(){
 
-
+   // link for projects
     const applications = [
         {
             title: 'JbTravelBlog', 
@@ -66,18 +66,16 @@ function Portfolio(){
             githubLink: 'https://github.com/lalitakapadia/object-relational-mapping-homework.git'
         }
     ]
-
+     // using react bootstrap for the array of dependencies
     return (
         <div>
           <>
-          <div  >
-          <br/>
-      <h3 style={{ fontSize: '1.5em', marginLeft: '10px', textAlign: 'center'}}>Portfolio</h3>
-      <br/>
+          <div  > 
+      <h3 style={{ fontSize: '2.4em', marginLeft: '10px', textAlign: 'center'}}>Portfolio</h3>
           </div>
           <div class="container">
             <div class="row">
-              {applications.map((app, index)=> (
+              {applications.map((app)=> (
                 <div class="col-4 p-3">
                   <div class="card">
                     <Project application={app} />
