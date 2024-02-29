@@ -70,10 +70,8 @@ function Portfolio(){
     return (
         <div>
           <>
-          <div  >
-          <br/>
+          <div  > 
       <h3 style={{ fontSize: '2.4em', marginLeft: '10px', textAlign: 'center'}}>Portfolio</h3>
-      <br/>
           </div>
           <div class="container">
             <div class="row">
