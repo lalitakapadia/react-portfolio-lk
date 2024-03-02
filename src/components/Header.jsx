@@ -1,12 +1,8 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
@@ -16,7 +12,7 @@ function Header() {
   return (
 
 <>
-<Navbar style={{background:'#12486B'}}  expand="lg" >
+<Navbar className="navbar navbar-expand-lg navbar-dark" style={{background:'#12486B'}}  expand="lg" >
     <Container>
       <Navbar.Brand href="/">Lalita Kapadia</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
