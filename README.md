@@ -89,3 +89,6 @@ In  terminal give npm start and you can see your application  on browser.
 
 Github pages link:
 https://github.com/lalitakapadia/react-portfolio-lk.git
+
+Deployed Link:
+https://lalita-kapadia-portfolio.netlify.app

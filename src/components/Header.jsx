@@ -12,7 +12,7 @@ function Header() {
   return (
 
 <>
-<Navbar className="navbar navbar-expand-lg navbar-dark" style={{background:'#12486B'}}  expand="lg" >
+<Navbar  sticky="top" className="navbar navbar-expand-lg navbar-dark sticky" style={{background:'#12486B'}}  expand="lg" >
     <Container>
       <Navbar.Brand href="/">Lalita Kapadia</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
