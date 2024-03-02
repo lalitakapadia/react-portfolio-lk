@@ -90,7 +90,7 @@ export default defineConfig({
  
 ## Screenshot!
 
-[homepage](/images/Lalita'sPortfolio.png)
+[homepage](public/images/Lalita'sPortfolio.png)
 
-Github pages 
-[text](https://github.com/lalitakapadia/react-portfolio-lk.git)
+Github pages link:
+https://github.com/lalitakapadia/react-portfolio-lk.git
