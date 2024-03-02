@@ -30,9 +30,9 @@ function Portfolio(){
          },
          {
           title: 'Work day Scheduler',
-          imageSrc: '/images/workdayScheduler.png',
+          imageSrc: '/images/WorkdayScheduler.png',
           description: 'HTML, CSS, JavaScript, jQuery, BootStrap',
-          deployedLink: 'https://lalitakapadia.github.io/workday-scheduler/r',
+          deployedLink: 'https://lalitakapadia.github.io/workday-scheduler/',
           githubLink: 'https://github.com/lalitakapadia/workday-scheduler.git'
         },
          {

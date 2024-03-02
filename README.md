@@ -87,3 +87,7 @@ export default defineConfig({
     open: true
   }
 })
+ 
+## Screenshot!
+
+[homepage](public/images/Lalita'sPortfolio.png)
