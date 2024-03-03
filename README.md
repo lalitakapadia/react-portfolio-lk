@@ -85,7 +85,7 @@ In  terminal give npm start and you can see your application  on browser.
  
 ## Screenshot!
 
-![Alt text](public/images/Lalita'sPortfolio.png)
+![Alt text](public/images/LalitaKapadia-Portfolio.png)
 
 Github pages link:
 https://github.com/lalitakapadia/react-portfolio-lk.git

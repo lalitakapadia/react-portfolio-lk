@@ -22,29 +22,34 @@ function Portfolio(){
  
          },
          {
+          title: 'Portfolio',
+          imageSrc: '/images/LalitaKapadia-Portfolio.png',
+          description: 'React, Vite, NodeJs, React-Bootstrap', 
+          deployedLink: 'https://lalita-kapadia-portfolio.netlify.app',
+          githubLink: 'https://github.com/lalitakapadia/react-portfolio-lk.git'
+
+        },
+        {
           title: 'weather Dashboard',
           imageSrc: '/images/weatherDashboard.png',
           description: 'Open Weather API, jQuery, HTML, Javascript',
           deployedLink: 'https://lalitakapadia.github.io/weather-dashboard/',
           githubLink: 'https://github.com/lalitakapadia/weather-dashboard.git'
-         },
-         {
+        },
+        {
           title: 'Work day Scheduler',
           imageSrc: '/images/WorkdayScheduler.png',
           description: 'HTML, CSS, JavaScript, jQuery, BootStrap',
           deployedLink: 'https://lalitakapadia.github.io/workday-scheduler/',
           githubLink: 'https://github.com/lalitakapadia/workday-scheduler.git'
         },
-         {
+        {
            title: 'Note Taker',
            imageSrc: '/images/noteTaker.png',
            description: 'Express.js, backend application',
            deployedLink: 'https://github.com/lalitakapadia/express-note-taker',
            githubLink: 'https://github.com/lalitakapadia/express-note-taker.git'
-         },
-         
-        
-
+        },
         {
           title: 'PWA Text Editor',
           imageSrc: '/images/pwa.png',
