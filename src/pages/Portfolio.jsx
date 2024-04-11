@@ -7,11 +7,18 @@ function Portfolio(){
    // link for projects
     const applications = [
         {
-            title: 'JbTravelBlog', 
-            imageSrc: '/images/travelBlog.png',
-            description: 'NodeJS, Express, MySQL, Sequelize, Tailwind',
-            deployedLink: 'https://jbtravelblogfinal-84a20cc94acf.herokuapp.com',
-            githubLink: 'https://github.com/MustafeMohamoud1/JBTravelBlog'
+            title: 'ExpenseTracker', 
+            imageSrc: '/images/BudgetPage.png',
+            description: 'MERN, Express, React, NodeJs, Mongodb, ReactBootstrap, ChakraUI, Chart.js, GraphQl',
+            deployedLink: 'https://budgetbuddytracker.onrender.com/',
+            githubLink: 'https://github.com/BudgetBuddy887/expenseTracker'
+        },
+        {
+             title: 'JbTravelBlog', 
+             imageSrc: '/images/travelBlog.png',
+             description: 'NodeJS, Express, MySQL, Sequelize, Tailwind',
+             deployedLink: 'https://jbtravelblogfinal-84a20cc94acf.herokuapp.com',
+             githubLink: 'https://github.com/MustafeMohamoud1/JBTravelBlog'
          },
          {
              title: 'Recipe Translator',
@@ -22,40 +29,40 @@ function Portfolio(){
  
          },
          {
-          title: 'Portfolio',
-          imageSrc: '/images/LalitaKapadia-Portfolio.png',
-          description: 'React, Vite, NodeJs, React-Bootstrap', 
-          deployedLink: 'https://lalita-kapadia-portfolio.netlify.app',
-          githubLink: 'https://github.com/lalitakapadia/react-portfolio-lk.git'
+            title: 'Portfolio',
+            imageSrc: '/images/LalitaKapadia-Portfolio.png',
+            description: 'React, Vite, NodeJs, React-Bootstrap', 
+            deployedLink: 'https://lalita-kapadia-portfolio.netlify.app',
+            githubLink: 'https://github.com/lalitakapadia/react-portfolio-lk.git'
 
         },
         {
-          title: 'weather Dashboard',
-          imageSrc: '/images/weatherDashboard.png',
-          description: 'Open Weather API, jQuery, HTML, Javascript',
-          deployedLink: 'https://lalitakapadia.github.io/weather-dashboard/',
-          githubLink: 'https://github.com/lalitakapadia/weather-dashboard.git'
+            title: 'weather Dashboard',
+            imageSrc: '/images/weatherDashboard.png',
+            description: 'Open Weather API, jQuery, HTML, Javascript',
+            deployedLink: 'https://lalitakapadia.github.io/weather-dashboard/',
+            githubLink: 'https://github.com/lalitakapadia/weather-dashboard.git'
         },
         {
-          title: 'Work day Scheduler',
-          imageSrc: '/images/WorkdayScheduler.png',
-          description: 'HTML, CSS, JavaScript, jQuery, BootStrap',
-          deployedLink: 'https://lalitakapadia.github.io/workday-scheduler/',
-          githubLink: 'https://github.com/lalitakapadia/workday-scheduler.git'
+            title: 'Work day Scheduler',
+            imageSrc: '/images/WorkdayScheduler.png',
+            description: 'HTML, CSS, JavaScript, jQuery, BootStrap',
+            deployedLink: 'https://lalitakapadia.github.io/workday-scheduler/',
+            githubLink: 'https://github.com/lalitakapadia/workday-scheduler.git'
         },
         {
-           title: 'Note Taker',
-           imageSrc: '/images/noteTaker.png',
-           description: 'Express.js, backend application',
-           deployedLink: 'https://github.com/lalitakapadia/express-note-taker',
-           githubLink: 'https://github.com/lalitakapadia/express-note-taker.git'
+            title: 'Note Taker',
+            imageSrc: '/images/noteTaker.png',
+            description: 'Express.js, backend application',
+            deployedLink: 'https://github.com/lalitakapadia/express-note-taker',
+            githubLink: 'https://github.com/lalitakapadia/express-note-taker.git'
         },
         {
-          title: 'PWA Text Editor',
-          imageSrc: '/images/pwa.png',
-          description: 'Nodejs, Webpack, ',
-          deployedLink: 'https://pwa-text-editor-lk-7nx4.onrender.com/',
-          githubLink: 'https://github.com/lalitakapadia/pwa-text-editor-lk',
+            title: 'PWA Text Editor',
+            imageSrc: '/images/pwa.png',
+            description: 'Nodejs, Webpack, ',
+            deployedLink: 'https://pwa-text-editor-lk-7nx4.onrender.com/',
+            githubLink: 'https://github.com/lalitakapadia/pwa-text-editor-lk',
         },
         {
             title: 'html-semantic-accessible-website',
@@ -90,25 +97,7 @@ function Portfolio(){
           </Row>
         </Container>
       </>
-      //   <div>
-      //     <>
-      //     <div  > 
-      // <h3 style={{ fontSize: '2.4em', marginLeft: '10px', textAlign: 'center'}}>Portfolio</h3>
-      //     </div>
-      //     <div class="container">
-      //       <div class="row">
-      //         {applications.map((app)=> (
-      //           <div class="col-4 p-3">
-      //             <div class="card">
-      //               <Project application={app} />
-      //             </div>
-      //           </div>
-      //         ))}
-      //       </div>
-      //     </div>
-      //     </>
-      //   </div>
-       
+      
     )
 }
 

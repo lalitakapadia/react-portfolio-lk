@@ -17,7 +17,7 @@ export default function AboutMe() {
                         <h3 style = {{ textAlign: 'left', fontSize: '1.5em'}}>About Me</h3>
                         <p style={{ textAlign: 'justify', fontSize: '1.3em', maxWidth: '90%', width: '100%'}}>
 
-                        I am working as Customer Service Asssistance in Sainsbury's since last  years.
+                        I am working as Customer Service Asssistance in Sainsbury's since last 8 years.
                         <br></br>
                         <br></br>
                         During Full Stack Web Developer Bootcamp course at University of Birmingham I have learned so many technical and soft skills to develop web applications using latest modern technologies.

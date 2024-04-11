@@ -6,6 +6,13 @@ export default function PortfolioCarousel() {
 
     const applications = [
         {
+            title: 'ExpenseTracker', 
+            imageSrc: '/images/BudgetPage.png',
+            description: 'MERN, Express, React, NodeJs, Mongodb, ReactBootstrap, ChakraUI, Chart.js, GraphQl',
+            deployedLink: 'https://budgetbuddytracker.onrender.com/',
+            githubLink: 'https://github.com/BudgetBuddy887/expenseTracker'
+        },
+        {
              title: 'JbTravelBlog', 
              imageSrc: '/images/travelBlog.png',
              description: 'NodeJS, Express, MySQL, Sequelize, Tailwind',
